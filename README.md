@@ -4,7 +4,7 @@
 This repository implements a multi-agent research assistant integrating:
 
 - **RAG Agent:** Uses Pinecone (index: `crime-reports`) with metadata filtering (namespaces like `2023q1`, `2024q2`, etc.) to retrieve historical crime records.
-- **Web Search Agent:** Uses SerpAPI for real-time web search on crime trends and incidents.
+- **Web Search Agent:** Uses Tavily Search API for real-time web search on crime trends and incidents.
 - **Snowflake Agent:** Queries structured crime statistics stored in Snowflake to generate summary and charts.
 - **ImageGenerator Agent:** Uses image generation capabilities to build “contextual” images.
 - **Comparision Agent:** Uses Snowflake data to compare data amongst different citites to compare the safety in each city against each other.
@@ -30,7 +30,7 @@ Overview
 - AWS account for S3 access
 - Pinecone account
 - Snowflake account
-- SerpAPI key
+- Tavily Search API key
 
 ---
 
@@ -85,7 +85,7 @@ Overview
 ---
 
 ## 🔧 Tools Integration
-- **Web Search:** SerpAPI integration
+- **Web Search:** Tavily Search API integration
 - **RAG:** Pinecone vector store
 - **Database:** Snowflake connection
 - **LLM:** Anthropic Claude 3
