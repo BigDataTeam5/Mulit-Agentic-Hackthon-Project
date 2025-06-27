@@ -3,7 +3,7 @@
 
 This repository implements a multi-agent research assistant integrating:
 
-- **RAG Agent:** Uses Pinecone (index: `crime-reports`) with metadata filtering (namespaces like `2023q1`, `2024q2`, etc.) to retrieve historical crime records.
+- **RAG Agent:** Uses Pinecone (index: `crime-reports`) with metadata filtering (namespaces like `2023q1`, `2024q2`, etc.) to retrieve historical crime records 
 - **Web Search Agent:** Uses Tavily Search API for real-time web search on crime trends and incidents.
 - **Snowflake Agent:** Queries structured crime statistics stored in Snowflake to generate summary and charts.
 - **ImageGenerator Agent:** Uses image generation capabilities to build “contextual” images.
